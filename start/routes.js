@@ -17,6 +17,10 @@
 const Route = use('Route')
 
 Route.post('users', 'UserController.store')
+
 Route.post('session', 'SessionController.store')
+
 Route.post('forgot', 'ForgotPasswordController.store')
 Route.put('forgot', 'ForgotPasswordController.update')
+
+Route.post('files', 'FileController.store')

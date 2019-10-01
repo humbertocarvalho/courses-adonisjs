@@ -46,6 +46,13 @@ class User extends Model {
   addresses () {
     return this.hasMany('App/Models/UserAddress')
   }
+
+  static get traits () {
+    return [
+      '@provider:Adonis/Acl/HasRole',
+      '@provider:Adonis/Acl/HasPermission'
+    ]
+  }
 }
 
 module.exports = User

@@ -41,3 +41,5 @@ Route.group(() => {
 }).middleware(['auth'])
 
 Route.resource('permissions', 'PermissionController').apiOnly()
+
+Route.resource('roles', 'RoleController').apiOnly()
